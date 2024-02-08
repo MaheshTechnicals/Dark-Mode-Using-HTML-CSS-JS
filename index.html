@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGfn_RZO8868W6Oi_YkmUIffaTizmLYAmRvFkka_UefH5O9iRflup1cFe&s=10");
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: center;
+      color: white;
+      justify-content: center;
+
+
+    }
+
+    h2 {
+      padding: 10px 20px;
+      background: black;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    button {
+      font-size: 50px;
+      margin-top: 50px;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    button i {
+      color: white;
+    }
+  </style>
+
+  <title>Dark Mode</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2>Mahesh Technicals</h2>
+
+  <button><i class="fa-regular fa-sun"></i></button>
+
+
+
+  <!-- Project -->
+  <script>
+    let body = document.querySelector("body");
+    let icon = document.querySelector("button");
+    let h2 = document.querySelector("h2")
+
+    icon.addEventListener("click", () => {
+
+      if (icon.innerHTML === '<i class="fa-regular fa-sun"></i>') {
+        icon.innerHTML = '<i class="fa-regular fa-moon"></i>';
+        body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf2SnQ1qba41FmzRp2gnvhnf7CSGvZBdsfZV6F-a3CsTBC8yec6Q-wNWu_&s=10")';
+        body.style.color = "white";
+        document.querySelector("i").style.color = "white";
+        body.style.transition = "2s";
+        icon.style.transition = "2s";
+        h2.style.background = "yellow"
+        h2.style.color = "#222222"
+        h2.style.transition = "2s"
+
+      } else {
+        body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGfn_RZO8868W6Oi_YkmUIffaTizmLYAmRvFkka_UefH5O9iRflup1cFe&s=10")';
+        body.style.color = "white";
+        icon.innerHTML = '<i class="fa-regular fa-sun"></i>';
+        h2.style.background = "black"
+        h2.style.transition = "2s"
+        h2.style.color = "white"
+      }
+    });
+  </script>
+</body>
+
+</html>
