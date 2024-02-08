@@ -16,7 +16,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGfn_RZO8868W6Oi_YkmUIffaTizmLYAmRvFkka_UefH5O9iRflup1cFe&s=10");
+      background-image: url("/sun.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       object-fit: center;
@@ -74,7 +74,7 @@
 
       if (icon.innerHTML === '<i class="fa-regular fa-sun"></i>') {
         icon.innerHTML = '<i class="fa-regular fa-moon"></i>';
-        body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf2SnQ1qba41FmzRp2gnvhnf7CSGvZBdsfZV6F-a3CsTBC8yec6Q-wNWu_&s=10")';
+        body.style.backgroundImage = 'url("/moon.jpeg")';
         body.style.color = "white";
         document.querySelector("i").style.color = "white";
         body.style.transition = "2s";
@@ -84,7 +84,7 @@
         h2.style.transition = "2s"
 
       } else {
-        body.style.backgroundImage = 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeGfn_RZO8868W6Oi_YkmUIffaTizmLYAmRvFkka_UefH5O9iRflup1cFe&s=10")';
+        body.style.backgroundImage = 'url("/sun.jpeg")';
         body.style.color = "white";
         icon.innerHTML = '<i class="fa-regular fa-sun"></i>';
         h2.style.background = "black"
